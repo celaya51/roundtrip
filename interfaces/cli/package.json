@@ -1,0 +1,1 @@
+{"name":"@roundtrip/cli","version":"0.2.0","type":"module","license":"AGPL-3.0-or-later","dependencies":{"@roundtrip/core":"0.2.0","@roundtrip/renderer-html":"0.2.0","@roundtrip/renderer-svg":"0.2.0"}}
