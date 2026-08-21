@@ -1,0 +1,18 @@
+{
+  "name": "roundtrip",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-or-later",
+  "workspaces": ["packages/*", "interfaces/*", "integrations/*"],
+  "scripts": {
+    "render:example": "node --experimental-strip-types scripts/render-example.ts",
+    "smoke": "node --experimental-strip-types scripts/smoke-test.ts",
+    "mcp": "node --experimental-strip-types interfaces/mcp/src/index.ts"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/server": "^2.0.0",
+    "zod": "^4.0.0"
+  },
+  "engines": { "node": ">=20" }
+}

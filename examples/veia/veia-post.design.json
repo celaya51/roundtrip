@@ -1,0 +1,193 @@
+{
+  "schema": "roundtrip.design",
+  "version": "0.2",
+  "id": "veia-campaign-001",
+  "name": "VEIA · Presencia digital",
+  "metadata": {
+    "brand": "VEIA",
+    "locale": "es-MX"
+  },
+  "assets": [],
+  "pages": [
+    {
+      "id": "instagram-4x5",
+      "name": "Instagram 4:5",
+      "width": 1080,
+      "height": 1350,
+      "background": "#F4EFE7",
+      "elements": [
+        {
+          "id": "brand",
+          "type": "text",
+          "x": 70,
+          "y": 60,
+          "width": 300,
+          "height": 70,
+          "zIndex": 10,
+          "text": "VEIA",
+          "style": {
+            "fontFamily": "Arial, sans-serif",
+            "fontSize": 44,
+            "fontWeight": 700,
+            "letterSpacing": 6,
+            "color": "#202020"
+          }
+        },
+        {
+          "id": "badge",
+          "type": "shape",
+          "shape": "rect",
+          "x": 70,
+          "y": 150,
+          "width": 250,
+          "height": 54,
+          "zIndex": 1,
+          "fill": "#C96845",
+          "borderRadius": 27
+        },
+        {
+          "id": "badge-text",
+          "type": "text",
+          "x": 92,
+          "y": 164,
+          "width": 205,
+          "height": 30,
+          "zIndex": 2,
+          "text": "MÁS POPULAR",
+          "style": {
+            "fontFamily": "Arial, sans-serif",
+            "fontSize": 22,
+            "fontWeight": 700,
+            "color": "#FFFFFF",
+            "align": "center"
+          }
+        },
+        {
+          "id": "headline",
+          "type": "text",
+          "x": 70,
+          "y": 245,
+          "width": 700,
+          "height": 300,
+          "zIndex": 2,
+          "text": "Tu negocio merece verse profesional en internet",
+          "style": {
+            "fontFamily": "Georgia, serif",
+            "fontSize": 72,
+            "fontWeight": 700,
+            "lineHeight": 0.98,
+            "color": "#202020"
+          }
+        },
+        {
+          "id": "sub",
+          "type": "text",
+          "x": 70,
+          "y": 575,
+          "width": 650,
+          "height": 55,
+          "zIndex": 2,
+          "text": "Landing profesional + Google + WhatsApp",
+          "style": {
+            "fontFamily": "Arial, sans-serif",
+            "fontSize": 28,
+            "fontWeight": 500,
+            "color": "#373737"
+          }
+        },
+        {
+          "id": "price",
+          "type": "text",
+          "x": 70,
+          "y": 690,
+          "width": 500,
+          "height": 110,
+          "zIndex": 2,
+          "text": "$7,500 MXN",
+          "style": {
+            "fontFamily": "Arial, sans-serif",
+            "fontSize": 74,
+            "fontWeight": 800,
+            "color": "#C96845"
+          }
+        },
+        {
+          "id": "price-note",
+          "type": "text",
+          "x": 75,
+          "y": 790,
+          "width": 260,
+          "height": 40,
+          "zIndex": 2,
+          "text": "pago único",
+          "style": {
+            "fontFamily": "Arial, sans-serif",
+            "fontSize": 26,
+            "color": "#383838"
+          }
+        },
+        {
+          "id": "benefits",
+          "type": "text",
+          "x": 70,
+          "y": 860,
+          "width": 720,
+          "height": 270,
+          "zIndex": 2,
+          "text": "• Hasta 7 secciones\n• Diseño personalizado\n• Versión móvil\n• WhatsApp, formulario y mapa\n• SEO básico + Google Business Profile\n• Publicación y conexión del dominio",
+          "style": {
+            "fontFamily": "Arial, sans-serif",
+            "fontSize": 27,
+            "lineHeight": 1.45,
+            "color": "#292929"
+          }
+        },
+        {
+          "id": "cta",
+          "type": "shape",
+          "shape": "rect",
+          "x": 70,
+          "y": 1175,
+          "width": 940,
+          "height": 90,
+          "zIndex": 1,
+          "fill": "#C96845",
+          "borderRadius": 20
+        },
+        {
+          "id": "cta-text",
+          "type": "text",
+          "x": 110,
+          "y": 1200,
+          "width": 860,
+          "height": 45,
+          "zIndex": 2,
+          "text": "50% para iniciar · Escríbenos por WhatsApp",
+          "style": {
+            "fontFamily": "Arial, sans-serif",
+            "fontSize": 29,
+            "fontWeight": 700,
+            "color": "#FFFFFF",
+            "align": "center"
+          }
+        },
+        {
+          "id": "footer",
+          "type": "text",
+          "x": 390,
+          "y": 1290,
+          "width": 300,
+          "height": 40,
+          "zIndex": 2,
+          "text": "veia.com.mx",
+          "style": {
+            "fontFamily": "Arial, sans-serif",
+            "fontSize": 23,
+            "color": "#303030",
+            "align": "center"
+          }
+        }
+      ]
+    }
+  ]
+}
