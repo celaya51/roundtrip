@@ -1,0 +1,13 @@
+import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import { validateDesign, setText, resizePage } from "../packages/core/src/index.ts";
+import { renderHtml } from "../packages/renderer-html/src/index.ts";
+import { importRoundtripHtml } from "../packages/importer-html/src/index.ts";
+import { migrateDesign } from "../packages/migrations/src/index.ts";
+const doc=JSON.parse(await readFile(new URL("../examples/veia/veia-post.design.json",import.meta.url),"utf8"));
+assert.equal(validateDesign(doc).ok,true);
+const changed=setText(doc,"price","$8,500 MXN"); assert.equal(changed.pages[0].elements.find((e:any)=>e.id==="price").text,"$8,500 MXN");
+const story=resizePage(doc,"instagram-4x5",1080,1920,"scale"); assert.equal(story.pages[0].height,1920);
+const html=renderHtml(doc); const recovered=importRoundtripHtml(html); assert.deepEqual(recovered,doc);
+assert.deepEqual(migrateDesign(doc,"0.2"),doc);
+console.log("Smoke test OK: validate, mutate, resize, render and exact HTML roundtrip");
