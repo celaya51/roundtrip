@@ -57,5 +57,5 @@ The roadmap is capability-driven, not date-driven. We only advance when the prev
 ## v1.0 — Public contract
 - Stable DesignIR 1.x.
 - Documented migration guarantees.
-- Full AGPL license text and third-party review completed.
+- Third-party licensing and compliance review completed.
 - Security, performance and compatibility test matrix.
