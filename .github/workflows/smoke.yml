@@ -1,0 +1,27 @@
+name: smoke
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    name: smoke test (node ${{ matrix.node }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ['22', '24']
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      # El núcleo no tiene dependencias internas: el smoke test corre
+      # directamente sobre TypeScript, sin npm install.
+      - name: Ejecutar smoke test
+        run: npm run smoke

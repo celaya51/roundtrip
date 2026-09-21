@@ -8,6 +8,7 @@
   "scripts": {
     "render:example": "node --experimental-strip-types scripts/render-example.ts",
     "smoke": "node --experimental-strip-types scripts/smoke-test.ts",
+    "test": "npm run smoke",
     "mcp": "node --experimental-strip-types interfaces/mcp/src/index.ts"
   },
   "devDependencies": {

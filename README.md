@@ -1,5 +1,7 @@
 # Roundtrip
 
+[![smoke](https://github.com/celaya51/roundtrip/actions/workflows/smoke.yml/badge.svg)](https://github.com/celaya51/roundtrip/actions/workflows/smoke.yml)
+
 **Portable, editable design infrastructure.**
 
 Roundtrip treats visual design as structured data instead of locking the source of truth inside a single editor or output format.
@@ -40,6 +42,11 @@ Node 22+ can run the TypeScript source directly with type stripping:
 npm run smoke
 npm run render:example
 ```
+
+The smoke test validates the DesignIR example, applies a deterministic mutation,
+resizes a page, renders HTML and checks that the result roundtrips back to the
+original document exactly. It runs on every push via GitHub Actions
+(`.github/workflows/smoke.yml`) on Node 22 and 24.
 
 Generated artifacts land in `dist/`.
 
